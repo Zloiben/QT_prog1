@@ -19,6 +19,15 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        prog1.cpp
+        prog1.h
+        prog1.ui
+        prog2.cpp
+        prog2.h
+        prog2.ui
+        prog3.cpp
+        prog3.h
+        prog3.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
