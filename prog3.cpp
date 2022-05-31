@@ -7,6 +7,9 @@ prog3::prog3(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->back, &QPushButton::clicked, this, &prog3::back_task_3);
+    connect(ui->pushButton, &QPushButton::clicked, this, &prog3::add);
+    connect(ui->pushButton_2, &QPushButton::clicked, this, &prog3::set);
+    connect(ui->pushButton_3, &QPushButton::clicked, this, &prog3::html);
 }
 
 prog3::~prog3()
@@ -17,4 +20,16 @@ prog3::~prog3()
 void prog3::back_task_3(){
     this->close();
     emit firstWindow();
+}
+
+void prog3::add(){
+    ui->textEdit->append(ui->plainTextEdit->toPlainText());
+}
+
+void prog3::set(){
+    ui->textEdit->setText(ui->plainTextEdit->toPlainText());
+}
+
+void prog3::html(){
+    ui->textEdit->setHtml("<font color='red'>Hello</font>");
 }

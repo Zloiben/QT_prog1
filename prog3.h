@@ -19,6 +19,10 @@ signals:
 
 private slots:
     void back_task_3();
+    void add();
+    void set();
+    void html();
+
 
 private:
     Ui::prog3 *ui;
